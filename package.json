@@ -1,0 +1,30 @@
+{
+  "name": "clinic-phone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:migrate": "sequelize-cli db:migrate --config src/config/config.json --migrations-path src/migrations --models-path src/models",
+    "db:migrate:undo": "sequelize-cli db:migrate:undo --config src/config/config.json --migrations-path src/migrations --models-path src/models",
+    "db:migrate:undo:all": "sequelize-cli db:migrate:undo:all --config src/config/config.json --migrations-path src/migrations --models-path src/models",
+    "db:status": "sequelize-cli db:migrate:status --config src/config/config.json --migrations-path src/migrations"
+  },
+  "keywords": [],
+  "author": "benyamin",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "@iotype-ai/sdk": "^1.0.0",
+    "axios": "^1.20.0",
+    "decibri": "^5.7.0",
+    "dotenv": "^18.0.4",
+    "dotenv-cli": "^11.0.0",
+    "express": "^5.2.1",
+    "form-data": "^4.0.6",
+    "mysql2": "^3.24.5",
+    "sequelize": "^6.37.8",
+    "sequelize-cli": "^6.6.5",
+    "ws": "^8.22.0"
+  }
+}

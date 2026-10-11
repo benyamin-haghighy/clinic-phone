@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Secrets
+.env
+
+# macOS
+.DS_Store
+__MACOSX/
+
+# User voice recordings (personal data)
+src/audio/user_audio/*
+!src/audio/user_audio/.gitkeep
+
+# Logs
+*.log
